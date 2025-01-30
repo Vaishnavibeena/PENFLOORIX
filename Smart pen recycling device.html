@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pen Recycling Device</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header style="background-color: #800080; color: white; text-align: center; padding: 20px;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4bnKVXVaxTgf28lgcDaKQfxnb4tozD8JGp6yONX_LXUPtjrhpDLzbzQG3H90RDL0DS_M&usqp=CAU" alt="College Logo" style="height: 80px;">
+        <h1>PENFLOORIX</h1>
+        <p>Smart pen interacting with a sensoring carpet device and kiosk monitoring system</p>
+        <img src="recycling_machine.jpg" alt="Recycling Machine" style="width: 100%; max-height: 300px; object-fit: cover; margin-top: 10px;">
+    </header>
+    
+    <nav style="background-color: #333; padding: 10px; text-align: center;">
+        <a href="#login" style="color: white; margin: 10px; text-decoration: none;">Login</a>
+        <a href="#device-operation" style="color: white; margin: 10px; text-decoration: none;">Device Operation</a>
+        <a href="#energy-monitor" style="color: white; margin: 10px; text-decoration: none;">Energy Consumption</a>
+        <a href="#recycling-stats" style="color: white; margin: 10px; text-decoration: none;">Recycling Statistics</a>
+        <a href="#pens-inserted" style="color: white; margin: 10px; text-decoration: none;">Pens Inserted</a>
+        <a href="#carpets-produced" style="color: white; margin: 10px; text-decoration: none;">Carpets Produced</a>
+    </nav>
+    
+    <section class="login" id="login">
+        <h2>Student Login</h2>
+        <form id="loginForm">
+            <label for="studentId">Student ID:</label>
+            <input type="text" id="studentId" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p id="loginMessage"></p>
+    </section>
+    
+    <section class="device-operation" id="device-operation" style="display: none;">
+        <h2>Device Operation</h2>
+        <p>Insert your used pens into the slot below to start recycling.</p>
+        <button id="startRecycling">Start Recycling</button>
+        <p id="statusMessage"></p>
+    </section>
+    
+    <section class="energy-monitor" id="energy-monitor" style="display: none;">
+        <h2>Energy Consumption</h2>
+        <p>Current Energy Usage: <span id="energyUsage">0</span> kWh</p>
+    </section>
+    
+    <section class="recycling-stats" id="recycling-stats" style="display: none;">
+        <h2>Recycling Statistics</h2>
+        <p>Number of pens used per carpet: <span id="pensUsed">0</span></p>
+        <p>Amount of plastic recycled: <span id="plasticUsed">0</span> grams</p>
+    </section>
+    
+    <section class="pens-inserted" id="pens-inserted" style="display: none;">
+        <h2>Pens Inserted</h2>
+        <p>Total Pens Inserted: <span id="totalPens">0</span></p>
+    </section>
+    
+    <section class="carpets-produced" id="carpets-produced" style="display: none;">
+        <h2>Carpets Produced</h2>
+        <p>Total Carpets Produced: <span id="totalCarpets">0</span></p>
+    </section>
+    
+    <section class="close-section" style="text-align: center; padding: 20px;">
+        <button onclick="window.close();" style="padding: 10px 20px; font-size: 16px; background-color: red; color: white; border: none; cursor: pointer;">Close</button>
+    </section>
+    
+    <footer style="background-color: #800080; color: white; text-align: center; padding: 20px;">
+        <p>&copy; 2025 Mavericks</p>
+    </footer>
+</body>
+</html>
